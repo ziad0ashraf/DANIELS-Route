@@ -1,0 +1,275 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+span,p{
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-family: "Montserrat", sans-serif; 
+}
+.navs a{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+}
+#home{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../imgs/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    a{
+        font-size: 14px;
+    }
+}
+#home .icon-home{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.about1{
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    img{
+        width: 425px;
+        
+    }
+}
+#about .prog1{
+    .deg{
+        left: 95%;
+    }
+    animation: prog1 2s;
+}
+@keyframes prog1{
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+#about .prog2{
+    .deg{
+        left: 95%;
+    }
+    animation: prog2 2s;
+}
+@keyframes prog2{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+#about .prog3{
+    .deg{
+        left: 95%;
+    }
+    animation: prog3 2s;
+}
+@keyframes prog3{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+#about .btn-about{
+    .btn1{
+        background-color: #1c1c1c;
+        color: white;
+        transition: all 0.5s;
+    }
+    .btn2{
+        transition: all 0.5s;
+    }
+}
+#about .btn-about .btn1:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: solid 1px black;
+}
+.btn2:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+#services .ser i{
+    background-color: #f7f7f7;
+    transition: all 0.5s;
+}
+#services .ser:hover i{
+        color: white;
+        background-color: black;
+}
+.s_main h2{
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    width: 20%;
+}
+#portfolio{
+    h2{
+        background-image: url(../imgs/dots.png);
+        background-repeat: repeat;
+        width: 20%;    
+    }
+}
+#portfolio .lay-p{
+    opacity:0;
+    height: 95%;
+    width: 95%;
+    background-color: #f7f7f7; 
+    transition: all 0.5s;
+    transform: translateY(10px);
+    p{
+        font-weight: 500;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+    }
+}
+.lay-p div i{
+    color: white;
+    background-color: black;
+    margin-block: 10px;
+    font-size: 12px;
+}
+.lay-p div i:hover{
+    color: black;
+    background-color: #ffffff;
+    border: 0.5px solid black;
+}
+#portfolio .po:hover .lay-p{
+    opacity: 95%;
+    transform: translateY(0px);
+}
+#portfolio .po .pw{
+    position: relative;
+    p{
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        transition: all 0.7s;
+    }
+    div{
+        position: absolute;
+        top: 60%;
+        left: 0;
+        right: 0;
+        transition: all 0.7s;
+    }
+}
+#portfolio .po:hover .pw{
+    position: relative;
+    p{
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+    }
+    div{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+    }
+}
+#clients{
+    background-color: #f7f7f7;
+    h2{
+        background-image: url(../imgs/dots.png);
+        background-repeat: repeat;
+        width: 20%;    
+    }
+}
+#clients .client {
+    img{
+        width: 100px;
+    }
+}
+.carousel-indicators [data-bs-target] {
+    margin-inline: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius:100%;
+    background-color: #8d8d8d;
+}
+#team{
+    background-color: #f7f7f7;
+    padding-block: 50px; 
+    h2{
+        background-image: url(../imgs/dots.png);
+        background-repeat: repeat;
+        width: 20%;    
+    }   
+}
+#team .team{
+    .name{
+        background-color: #5f5f5f !important;
+    }
+}
+.lay-t i{
+        color: white;
+        background-color: black;
+        padding: 12px;
+        border-radius: 50%;
+}
+.lay-t i:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+}
+.lay-t{
+    inset: 5px;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5);   
+    width: 98%;
+    height: 98%;
+    background-color: #f7f7f7;  
+    opacity: 0;
+}
+.t-hov:hover .lay-t{
+    transform: rotateY(360deg) scale(1);
+    opacity: 0.9;
+}
+.t-hov{
+    img{
+        transition: all 0.5s;
+    }
+    overflow: hidden;
+}
+.t-hov:hover img{
+    transform:scale(1.2);
+}
+#contact{
+    button{
+        background-color: black;
+        color: white;
+    }
+    input{
+        background-color: #e6e2e2;
+    }
+    textarea{
+        background-color: #e6e2e2;
+
+    }
+    h2{
+        background-image: url(../imgs/dots.png);
+        background-repeat: repeat;
+        width: 25%;    
+    }
+}
+#contact .container{
+    padding-inline: 5%;
+}
+.con-hov i{
+    background-color: #e4e1e1;
+    padding: 6%;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.con-hov:hover i{
+    background-color: #000000;
+    color: white;
+}
+#contact button:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: solid 1px black;
+
+}
+footer{
+    margin-top: 50px;
+    background-color: #1c1c1c;
+    color: #748182;
+    font-size: 14px;
+}
